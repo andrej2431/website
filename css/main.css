@@ -1,0 +1,8 @@
+@import "body.css";
+@import "header.css";
+@import "footer.css";
+
+.content {
+    width:100%;
+    height:900px;
+}

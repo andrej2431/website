@@ -1,0 +1,42 @@
+.dropdown-list {
+    margin:5px;
+}
+
+
+.dropdown_button{
+    background-color:cadetblue ;
+    color: black;
+    padding: 20px;
+    font-size: 18px;
+    cursor:pointer;
+}
+
+.dropdown_button:hover, .dropdown_button:focus {
+    background-color: darkcyan;
+    
+}
+
+.dropdown {
+    position:relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display:none;
+    position:absolute;
+    background-color:darkcyan;
+    min-width: 100%;
+    z-index:1;
+    text-align: center;
+}
+
+.dropdown-content a{
+    color:black;
+    padding: 20px;
+    text-decoration: none;
+    display:block;
+}
+
+.dropdown-content a:hover {
+    background-color: cyan;
+}
