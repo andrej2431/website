@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="/css/main.css">
+<link rel="stylesheet" type="text/css" href="/css/clickable_dropdown.css">
+<script src="//code.jquery.com/jquery-1.10.2.js"></script> 
+<script>  
+$(function(){
+$("#header").load("/common/header.html");
+$("#footer").load("/common/footer.html");
+});
+</script>
+</head>
+<body>
+<div id="header"> </div>
+
+
+<div class="content">
+    <div class="dropdown-list">
+        <div class = "dropdown">
+            <button onclick="showDropdown('sort_dropdown')" class="dropdown_button" >Sorting Algorithms</button>
+            <div id = "sort_dropdown" class="dropdown-content">
+                <a href="sorts/quicksort">quicksort</a>
+                <a href="">mergesort</a>
+                <a href="#">bubblesort</a>
+                <a href="#">bucketsort</a>
+                <a href="#">countingsort</a>
+            </div>
+        </div>
+        
+        <div class = "dropdown">
+            <button onclick="showDropdown('tree_dropdown')" class="dropdown_button" >Binary Trees</button>
+            <div id = "tree_dropdown" class="dropdown-content">
+                <a href="#">full binary tree</a>
+                <a href="#">complete binary tree</a>
+                <a href="#">perfect &nbsp binary tree</a>
+                <a href="#">balanced binary tree</a>
+                <a href="#">degenerate binary tree</a>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<div id="footer"> </div>
+
+<script>
+function showDropdown(id) {
+
+    var dropdown = document.getElementById(id);
+    if(dropdown.style.display == "none" || dropdown.style.display==""){
+        dropdown.style.display = "block";
+    } else {
+        dropdown.style.display = "none";
+    }
+}
+</script>
+</body>
+</html>

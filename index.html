@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="/css/main.css">
+<link rel="stylesheet" type="text/css" href="/css/welcome_page.css">
+<script src="//code.jquery.com/jquery-1.10.2.js"></script> 
+<script>  
+$(function(){
+$("#header").load("/common/header.html");
+$("#footer").load("/common/footer.html");
+});
+</script>
+</head>
+<body>
+<div id="header"> </div>
+<label>Welcome to my Website!</label>
+
+<div id="footer"> </div>
+
+<script>
+function showDropdown(id) {
+
+    var dropdown = document.getElementById(id);
+    if(dropdown.style.display == "none" || dropdown.style.display==""){
+        dropdown.style.display = "block";
+    } else {
+        dropdown.style.display = "none";
+    }
+}
+</script>
+</body>
+</html>
